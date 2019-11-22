@@ -46,13 +46,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  login:
-    dependency: "direct main"
-    description:
-      path: login
-      relative: true
-    source: path
-    version: "1.0.0+1"
   matcher:
     dependency: transitive
     description:
