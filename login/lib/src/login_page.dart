@@ -45,25 +45,19 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Center(
-      child: Column(
-        children: <Widget>[
-          TextField(
-            controller: widget.controller,
-          ),
-          Container(
-            child: RaisedButton(
-                child: Text('click me'),
-                onPressed: () {
-                //  widget.controller.text.startsWith('a')?widget.onSuccess('true'):widget.onFail('false');
+      appBar: AppBar(
+        actions: <Widget>[
+          IconButton(icon: Icon(Icons.ac_unit), onPressed: () {
+              //  widget.controller.text.startsWith('a')?widget.onSuccess('true'):widget.onFail('false');
                 Navigator.pushReplacement(context,MaterialPageRoute(
                   builder: (context)=>Signup(onFail: widget.onFail, onSuccess: widget.onSuccess,)
                   ));
-                  }
-                  ))
-          
+          },)
         ],
       ),
-    ));
+        body: Center(
+        )
+   
+    );
   }
 }
