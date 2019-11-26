@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:login/src/signup_page.dart';
+
+import 'signup_page.dart';
+
 
 class LoginPage extends StatefulWidget {
   LoginPage({Key key, @required this.onSuccess, @required this.onFail})
@@ -53,10 +55,10 @@ class _LoginState extends State<Login> {
             child: RaisedButton(
                 child: Text('click me'),
                 onPressed: () {
-                 widget.controller.text.startsWith('a')?widget.onSuccess('true'):widget.onFail('false');
-                // Navigator.pushReplacement(context,MaterialPageRoute(
-                //   builder: (context)=>Signup(onFail: widget.onFail, onSuccess: widget.onSuccess,)
-                //   ));
+                //  widget.controller.text.startsWith('a')?widget.onSuccess('true'):widget.onFail('false');
+                Navigator.pushReplacement(context,MaterialPageRoute(
+                  builder: (context)=>Signup(onFail: widget.onFail, onSuccess: widget.onSuccess,)
+                  ));
                   }
                   ))
           
