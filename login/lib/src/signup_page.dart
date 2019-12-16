@@ -35,7 +35,8 @@ class _SignupState extends State<Signup> with SingleTickerProviderStateMixin{
                     height: 300,
                     width: 300,
                     color: Colors.orangeAccent,
-                    ),  animation: animation, builder: (BuildContext context, Widget child) {
+                    ),
+                      animation: animation, builder: (BuildContext context, Widget child) {
                       return Transform.rotate(child: child, angle: animation.value,);
                     },
                 )
